@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+<div class="container">
+    <header class="jumbotron">
+        <h1>Welcome to the weather</h1>
+    </header>
+    
+
+<div class="container">
+    <p>Location: <%= data.name %></p>
+    <p>Temperature: <%= conv(data.main.temp) %>&nbsp;&deg;C</p>
+    <p>Pressure: <%= data.main.pressure %>&nbsp;hpa</p>
+    <p>Humidity: <%= data.main.humidity %>&nbsp;&#37;</p>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<% include partials/footer %>
